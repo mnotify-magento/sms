@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+{{License}}
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Mnotify_Sms::sms" title="Mnotify SMS" module="Mnotify_Sms" sortOrder="11" resource="Mnotify_Sms::sms"/>
+        <add id="Mnotify_Sms::sms_head" title="Settings" module="Mnotify_Sms" sortOrder="40"
+             parent="Mnotify_Sms::sms" resource="Mnotify_Sms::sms"/>
+        <add id="Mnotify_Sms::config" title="Configuration" module="Mnotify_Sms" sortOrder="50"
+             action="adminhtml/system_config/edit/section/mnotify_sms_configuration"
+             resource="Mnotify_Sms::sms" parent="Mnotify_Sms::sms_head" />
+    </menu>
+</config>
